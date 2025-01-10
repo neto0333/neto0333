@@ -1,5 +1,8 @@
 body {
-    background-color: #0d0d0d;
+    background-image: url('URL_da_sua_imagem');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #e0e0e0;
     font-family: 'Orbitron', sans-serif;
     margin: 0;
@@ -32,9 +35,41 @@ nav ul li a {
 
 main {
     padding: 2em;
-    background-image: url('https://linkparaimagemneon.com');
-    background-size: cover;
-    background-position: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #ff00ff;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+button {
+    background-color: #00ccff;
+    color: #1f1f1f;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #ff00ff;
+    color: #fff;
 }
 
 footer {
@@ -47,3 +82,4 @@ footer {
     bottom: 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
 }
+
