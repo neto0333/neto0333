@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.button');
+    const tabs = document.querySelectorAll('.tab-link');
+    const contents = document.querySelectorAll('.tab-content');
     
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            alert('Botão clicado!');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            tabs.forEach(item => item.classList.remove('current'));
+            contents.forEach(content => content.classList.remove('current'));
+            
+            this.classList.add('current');
+            document.getElementById(this.dataset.tab).classList.add('current');
         });
     });
 });
