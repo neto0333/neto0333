@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Futurista</title>
+    <title>Pandora Eluxys</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Minha Empresa</h1>
+        <h1>Pandora Eluxys</h1>
         <nav>
             <ul>
-                <li><a href="#home">Início</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
+                <li><a href="#map">Mapa</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
@@ -21,12 +22,19 @@
     
     <main>
         <section id="home">
-            <h2>Bem-vindo</h2>
-            <p>Este é o site futurista da minha empresa.</p>
+            <h2>Página Inicial</h2>
+        </section>
+        <section id="about">
+            <h2>Sobre</h2>
+            <p>Pandora Eluxys é uma empresa de transportes especializada em pedras mármores, granitos e maquinários pesados. Oferecemos serviços de alta qualidade e confiança, com uma frota moderna e bem equipada para atender todas as suas necessidades de transporte.</p>
+        </section>
+        <section id="map">
+            <h2>Mapa Interativo</h2>
+            <!-- Código para o mapa interativo aqui -->
         </section>
         <section id="fueling">
             <h2>Abastecimento e Rotas</h2>
-            <form>
+            <form id="fueling-form">
                 <label for="truck">Caminhão:</label>
                 <input type="text" id="truck" name="truck">
                 
@@ -41,7 +49,7 @@
         </section>
         <section id="reports">
             <h2>Relatórios</h2>
-            <form>
+            <form id="reports-form">
                 <label for="truck-select">Selecione o Caminhão:</label>
                 <select id="truck-select" name="truck-select">
                     <option value="truck1">Caminhão 1</option>
@@ -58,7 +66,7 @@
     </main>
     
     <footer>
-        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Pandora Eluxys. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
