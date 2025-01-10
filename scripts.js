@@ -1,26 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.tab-link');
-    const contents = document.querySelectorAll('.tab-content');
-    
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-            tabs.forEach(item => item.classList.remove('current'));
-            contents.forEach(content => content.classList.remove('current'));
-            
-            this.classList.add('current');
-            document.getElementById(this.dataset.tab).classList.add('current');
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    const fuelingForm = document.querySelector('#fueling form');
+    const reportsForm = document.querySelector('#reports form');
+
+    fuelingForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const truck = document.querySelector('#truck').value;
+        const route = document.querySelector('#route').value;
+        const fuel = document.querySelector('#fuel').value;
+
+        // Armazenar informações de abastecimento (você pode salvar em local storage ou enviar para o servidor)
+        console.log(`Abastecimento registrado: Caminhão ${truck}, Rota ${route}, Litros ${fuel}`);
+    });
+
+    reportsForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const truckSelect = document.querySelector('#truck-select').value;
+        const period = document.querySelector('#period').value;
+
+        // Lógica para calcular gastos e médias (você pode buscar do local storage ou do servidor)
+        console.log(`Relatório gerado para: Caminhão ${truckSelect}, Período ${period}`);
     });
 });
-
-function addMeasurement() {
-    const measurement = document.getElementById('measurement').value;
-    if (measurement) {
-        const table = document.getElementById('measurement-table').getElementsByTagName('tbody')[0];
-        const newRow = table.insertRow();
-        const newCell = newRow.insertCell(0);
-        const newText = document.createTextNode(measurement);
-        newCell.appendChild(newText);
-        document.getElementById('measurement').value = '';
-    }
-}
