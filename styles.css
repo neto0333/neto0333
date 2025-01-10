@@ -1,62 +1,60 @@
 body {
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-    font-family: 'Orbitron', sans-serif;
-    color: #ffffff;
+    background: #0d0d0d;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 header {
-    background-color: #1f1c2c;
+    background-color: #1b1b1b;
     padding: 20px;
     text-align: center;
+    border-bottom: 3px solid #ff0099;
+}
+
+header h1 {
+    color: #ff0099;
+    text-shadow: 0 0 5px #ff0099;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 15px;
+    cursor: pointer;
+    padding: 10px;
 }
 
-nav ul li a {
-    color: #ff0099;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li:hover, .tab-link.current {
+    background-color: #ff0099;
+    color: #ffffff;
 }
 
-section {
-    padding: 50px;
+.tab-content {
+    display: none;
+    padding: 20px;
     text-align: center;
 }
 
-h1, h2 {
-    text-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099;
+.tab-content.current {
+    display: block;
 }
 
 footer {
-    background-color: #1f1c2c;
+    background-color: #1b1b1b;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
-}
-
-.button {
-    background-color: #ff0099;
-    box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099, 0 0 30px #ff0099;
-    border: none;
-    padding: 10px 20px;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #e60085;
 }
