@@ -49,6 +49,34 @@ nav ul li:hover, .tab-link.current {
     display: block;
 }
 
+form {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    background-color: #333333;
+    border: 1px solid #ff0099;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ff0099;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
 footer {
     background-color: #1b1b1b;
     color: #ffffff;
@@ -57,4 +85,18 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+}
+
+.button {
+    background-color: #ff0099;
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e60085;
 }
