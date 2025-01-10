@@ -24,7 +24,37 @@
             <h2>Bem-vindo</h2>
             <p>Este é o site futurista da minha empresa.</p>
         </section>
-        <!-- Seções adicionais podem ser adicionadas aqui -->
+        <section id="fueling">
+            <h2>Abastecimento e Rotas</h2>
+            <form>
+                <label for="truck">Caminhão:</label>
+                <input type="text" id="truck" name="truck">
+                
+                <label for="route">Rota:</label>
+                <input type="text" id="route" name="route">
+                
+                <label for="fuel">Abastecimento (litros):</label>
+                <input type="number" id="fuel" name="fuel">
+                
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section id="reports">
+            <h2>Relatórios</h2>
+            <form>
+                <label for="truck-select">Selecione o Caminhão:</label>
+                <select id="truck-select" name="truck-select">
+                    <option value="truck1">Caminhão 1</option>
+                    <option value="truck2">Caminhão 2</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+                
+                <label for="period">Período:</label>
+                <input type="text" id="period" name="period">
+                
+                <button type="submit">Calcular</button>
+            </form>
+        </section>
     </main>
     
     <footer>
