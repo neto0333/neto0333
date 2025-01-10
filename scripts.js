@@ -12,3 +12,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function addMeasurement() {
+    const measurement = document.getElementById('measurement').value;
+    if (measurement) {
+        const table = document.getElementById('measurement-table').getElementsByTagName('tbody')[0];
+        const newRow = table.insertRow();
+        const newCell = newRow.insertCell(0);
+        const newText = document.createTextNode(measurement);
+        newCell.appendChild(newText);
+        document.getElementById('measurement').value = '';
+    }
+}
