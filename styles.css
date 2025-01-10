@@ -1,20 +1,17 @@
 body {
-    background-image: url('URL_da_sua_imagem');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #e0e0e0;
-    font-family: 'Orbitron', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1f1f1f;
-    color: #ff00ff;
+    background-color: #333;
+    color: #fff;
     padding: 1em;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -28,15 +25,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ccff;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
 main {
     padding: 2em;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
 }
 
 section {
@@ -44,7 +39,7 @@ section {
 }
 
 h2 {
-    color: #ff00ff;
+    color: #333;
 }
 
 label {
@@ -60,26 +55,24 @@ input, select, button {
 }
 
 button {
-    background-color: #00ccff;
-    color: #1f1f1f;
+    background-color: #333;
+    color: #fff;
     border: none;
     cursor: pointer;
     margin-top: 1em;
 }
 
 button:hover {
-    background-color: #ff00ff;
-    color: #fff;
+    background-color: #555;
 }
 
 footer {
-    background-color: #1f1f1f;
-    color: #ff00ff;
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 1em;
     position: fixed;
     width: 100%;
     bottom: 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
-
