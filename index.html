@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Simples</title>
+    <title>Meu Site Futurista</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,12 +13,22 @@
     </header>
     <main>
         <section>
-            <h2>Sobre Mim</h2>
-            <p>Esta é uma seção sobre mim.</p>
+            <h2>Organizar Abastecimento de Caminhões</h2>
+            <form id="caminhao-form">
+                <label for="id">ID do Caminhão:</label>
+                <input type="text" id="id" name="id" required>
+                <label for="combustivel">Combustível Abastecido (litros):</label>
+                <input type="number" id="combustivel" name="combustivel" required>
+                <label for="distancia">Distância Percorrida (km):</label>
+                <input type="number" id="distancia" name="distancia" required>
+                <button type="submit">Adicionar</button>
+            </form>
         </section>
         <section>
-            <h2>Projetos</h2>
-            <p>Aqui estão alguns dos meus projetos.</p>
+            <h2>Médias dos Caminhões</h2>
+            <ul id="media-list">
+                <!-- As médias aparecerão aqui -->
+            </ul>
         </section>
     </main>
     <footer>
