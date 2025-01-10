@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const fuelingForm = document.querySelector('#fueling form');
-    const reportsForm = document.querySelector('#reports form');
+    const fuelingForm = document.querySelector('#fueling-form');
+    const reportsForm = document.querySelector('#reports-form');
 
     fuelingForm.addEventListener('submit', (event) => {
         event.preventDefault();
